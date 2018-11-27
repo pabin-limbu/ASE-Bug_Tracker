@@ -1,0 +1,10 @@
+C:\Users\pc\source\repos\bugTracker\bugTracker\obj\Debug\bugTracker.csprojAssemblyReference.cache
+C:\Users\pc\source\repos\bugTracker\bugTracker\obj\Debug\bugTracker.Properties.Resources.resources
+C:\Users\pc\source\repos\bugTracker\bugTracker\obj\Debug\bugTracker.view.FormLogin.resources
+C:\Users\pc\source\repos\bugTracker\bugTracker\obj\Debug\bugTracker.csproj.GenerateResource.cache
+C:\Users\pc\source\repos\bugTracker\bugTracker\obj\Debug\bugTracker.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\bugTracker\bugTracker\bin\Debug\bugTracker.exe.config
+C:\Users\pc\source\repos\bugTracker\bugTracker\bin\Debug\bugTracker.exe
+C:\Users\pc\source\repos\bugTracker\bugTracker\bin\Debug\bugTracker.pdb
+C:\Users\pc\source\repos\bugTracker\bugTracker\obj\Debug\bugTracker.exe
+C:\Users\pc\source\repos\bugTracker\bugTracker\obj\Debug\bugTracker.pdb
