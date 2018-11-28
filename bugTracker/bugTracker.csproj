@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controller\UserController.cs" />
+    <Compile Include="DAO\UserDao.cs" />
     <Compile Include="dbUtil\ConnectionFactory.cs" />
     <Compile Include="model\User.cs" />
     <Compile Include="Program.cs" />

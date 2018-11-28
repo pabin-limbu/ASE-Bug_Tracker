@@ -9,11 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using bugTracker.view;
 using System.Threading;
-
+using bugTracker.controller;
+using bugTracker.model;
 namespace bugTracker.view
 {
     public partial class FormLogin : Form
     {
+        User user;
         Thread thread;
         public FormLogin()
         {
@@ -44,6 +46,20 @@ namespace bugTracker.view
             FormRegistration regForm = new FormRegistration();
             Application.Run(regForm);
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UserController uController = new UserController();
+            user=uController.loginUser(txtUsername.Text,txtPassword.Text);
+            if (user != null)
+            {
+                MessageBox.Show("user found " + user.UserType);
+            }
+            else if (user == null) {
+
+                MessageBox.Show("no user found");
+            }
         }
     }
 }
