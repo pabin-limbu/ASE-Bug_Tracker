@@ -8,3 +8,8 @@ C:\Users\pc\source\repos\bugTracker\bugTracker\bin\Debug\bugTracker.exe
 C:\Users\pc\source\repos\bugTracker\bugTracker\bin\Debug\bugTracker.pdb
 C:\Users\pc\source\repos\bugTracker\bugTracker\obj\Debug\bugTracker.exe
 C:\Users\pc\source\repos\bugTracker\bugTracker\obj\Debug\bugTracker.pdb
+C:\Users\pc\source\repos\bugTracker\bugTracker\bin\Debug\MySql.Data.dll
+C:\Users\pc\source\repos\bugTracker\bugTracker\bin\Debug\Google.Protobuf.dll
+C:\Users\pc\source\repos\bugTracker\bugTracker\bin\Debug\MySql.Data.xml
+C:\Users\pc\source\repos\bugTracker\bugTracker\obj\Debug\bugTracker.view.FormRegistration.resources
+C:\Users\pc\source\repos\bugTracker\bugTracker\obj\Debug\bugTracker.csproj.CopyComplete
