@@ -16,9 +16,10 @@ namespace bugTracker.view
     public partial class FormLogin : Form
     {
         User user;
-        Thread thread;
+   
         public FormLogin()
         {
+          
             InitializeComponent();
         }
 
@@ -34,32 +35,33 @@ namespace bugTracker.view
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
-            
-            
-            this.Dispose();
-            thread = new Thread(openRegistrationForm);
-            thread.Start();
-        }
-
-        private void openRegistrationForm() {
+                                           
             FormRegistration regForm = new FormRegistration();
-            Application.Run(regForm);
-
+            regForm.Show();
         }
 
+       
         private void button1_Click(object sender, EventArgs e)
         {
             UserController uController = new UserController();
-            user=uController.loginUser(txtUsername.Text,txtPassword.Text);
+            user = uController.loginUser(txtUsername.Text, txtPassword.Text);
             if (user != null)
             {
-                MessageBox.Show("user found " + user.UserType);
+                          Dashboard dashboard = new Dashboard(user);
+                dashboard.Show();
+                this.Dispose();
             }
-            else if (user == null) {
-
+            else if (user == null)
+            {
                 MessageBox.Show("no user found");
+
             }
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            StartUp.startUpInstance.Show();
         }
     }
 }

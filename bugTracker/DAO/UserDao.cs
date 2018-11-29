@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using bugTracker.model;
 using System.Windows.Forms;
-using bugTracker.model;
+
 
 namespace bugTracker.DAO
     
@@ -30,6 +30,7 @@ namespace bugTracker.DAO
 
         public User loginUser(String username, String password)
         {
+        
             String sql = "SELECT * FROM tbl_user WHERE username=@username AND password=@password";
             try {
                 MySqlCommand sqlCommand = new MySqlCommand(sql, conn);
@@ -40,7 +41,7 @@ namespace bugTracker.DAO
                 MySqlDataReader result = sqlCommand.ExecuteReader();
                 while(result.Read()){
                    user = new User();
-                    user.Id = result.GetInt16(0);
+                 user.Id = result.GetInt16(0);
                     user.Fname = result.GetString(1);
                     user.Lname = result.GetString(2);
                     user.Username = result.GetString(3);
@@ -48,9 +49,10 @@ namespace bugTracker.DAO
                     user.Email = result.GetString(5);
                     user.UserType = result.GetString(6);
                     user.Gender = result.GetString(7);
-                   
+                    conn.Close();
                     return user;
-                  //  MessageBox.Show(result.GetString(0));
+                    //  MessageBox.Show(result.GetString(0));
+                   
                 }
                 return null;
               

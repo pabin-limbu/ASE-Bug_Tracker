@@ -13,3 +13,6 @@ C:\Users\pc\source\repos\bugTracker\bugTracker\bin\Debug\Google.Protobuf.dll
 C:\Users\pc\source\repos\bugTracker\bugTracker\bin\Debug\MySql.Data.xml
 C:\Users\pc\source\repos\bugTracker\bugTracker\obj\Debug\bugTracker.view.FormRegistration.resources
 C:\Users\pc\source\repos\bugTracker\bugTracker\obj\Debug\bugTracker.csproj.CopyComplete
+C:\Users\pc\source\repos\bugTracker\bugTracker\obj\Debug\bugTracker.view.Dashboard.resources
+C:\Users\pc\source\repos\bugTracker\bugTracker\obj\Debug\bugTracker.view.StartUp.resources
+C:\Users\pc\source\repos\bugTracker\bugTracker\obj\Debug\bugTracker.view.FormAddProject.resources

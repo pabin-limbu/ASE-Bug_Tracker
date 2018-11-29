@@ -17,11 +17,7 @@ namespace bugTracker.controller
     {
         UserDao daoUser;
         User user;
-        //   String host = "127.0.0.1";
-        //  String port = "3306";
-        //  String database = "db_bug_tracker";
-        // String user = "root";
-        //   String password = "";
+        
         String mySqlConnectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=db_bug_tracker";
         MySqlConnection conn;
         public UserController()
@@ -81,7 +77,7 @@ namespace bugTracker.controller
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message);
+                MessageBox.Show("user controller"+e.Message);
             }
 
 

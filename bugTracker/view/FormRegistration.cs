@@ -23,5 +23,12 @@ namespace bugTracker.view
             UserController uController = new UserController();
             uController.adduser("pabin","limbu","limbupabin","lim","abc","admin","male");
         }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            StartUp.startUpInstance.Show();
+            
+        }
     }
 }
