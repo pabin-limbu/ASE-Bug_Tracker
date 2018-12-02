@@ -35,7 +35,7 @@ namespace bugTracker.DAO
             try {
                 MySqlCommand sqlCommand = new MySqlCommand(sql, conn);
                 sqlCommand.Parameters.AddWithValue("@username", username);
-                sqlCommand.Parameters.AddWithValue("@password", @password);
+                sqlCommand.Parameters.AddWithValue("@password", password);
 
                 conn.Open();
                 MySqlDataReader result = sqlCommand.ExecuteReader();

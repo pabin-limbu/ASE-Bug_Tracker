@@ -21,5 +21,10 @@ namespace bugTracker.model
         public DateTime EndDate { get => endDate; set => endDate = value; }
         public string Description { get => description; set => description = value; }
         public int User_id { get => user_id; set => user_id = value; }
+
+        public override string ToString()
+        {
+            return this.Title;
+        }
     }
 }

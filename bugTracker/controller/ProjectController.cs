@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using bugTracker.model;
 using bugTracker.DAO;
+using System.Windows.Forms;
 
 namespace bugTracker.controller
 {
@@ -41,6 +42,21 @@ namespace bugTracker.controller
         public bool deleteProject()
         {
             return false;
+        }
+
+        public List<Project> getAllProject() {
+            List<Project> allProject;
+            try {
+                daoProject = new ProjectDao();
+                allProject = daoProject.getAllProject();
+                return allProject;
+
+            } catch ( Exception ex) {
+                MessageBox.Show(ex.Message);
+            }
+
+
+            return null;
         }
     }
 }
