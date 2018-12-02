@@ -22,3 +22,6 @@ C:\Users\pc\source\repos\bugTracker\bugTracker\bin\Debug\WebDriver.dll
 C:\Users\pc\source\repos\bugTracker\bugTracker\bin\Debug\WebDriver.Support.dll
 C:\Users\pc\source\repos\bugTracker\bugTracker\bin\Debug\WebDriver.xml
 C:\Users\pc\source\repos\bugTracker\bugTracker\bin\Debug\WebDriver.Support.xml
+C:\Users\pc\source\repos\bugTracker\bugTracker\obj\Debug\bugTracker.view.FormFixBug.resources
+C:\Users\pc\source\repos\bugTracker\bugTracker\obj\Debug\bugTracker.view.FormBugAuditHistory.resources
+C:\Users\pc\source\repos\bugTracker\bugTracker\obj\Debug\bugTracker.view.FormViewFixedBug.resources

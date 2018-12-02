@@ -25,7 +25,7 @@ namespace bugTracker.DAO
         public bool insert(Project project)
         {
             this.project = project;
-            String sql = "INSERT INTO tbl_project (title,start_date,end_date,description,user_id)VALUES(@title,@start_date,@end_date,@description,@user_id)";
+            String sql = "INSERT INTO tbl_project (title,start_date,end_date,description)VALUES(@title,@start_date,@end_date,@description)";
             
             try {
                 MySqlCommand sqlCommand = new MySqlCommand(sql, conn);

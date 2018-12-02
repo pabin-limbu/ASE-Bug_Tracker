@@ -63,6 +63,7 @@
     <Compile Include="DAO\UserDao.cs" />
     <Compile Include="dbUtil\ConnectionFactory.cs" />
     <Compile Include="model\Bug.cs" />
+    <Compile Include="model\FixedBug.cs" />
     <Compile Include="model\Project.cs" />
     <Compile Include="model\User.cs" />
     <Compile Include="Program.cs" />
@@ -79,11 +80,23 @@
     <Compile Include="view\FormAddBug.Designer.cs">
       <DependentUpon>FormAddBug.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\FormBugAuditHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FormBugAuditHistory.Designer.cs">
+      <DependentUpon>FormBugAuditHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\FormBugList.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="view\FormBugList.Designer.cs">
       <DependentUpon>FormBugList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FormFixBug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FormFixBug.Designer.cs">
+      <DependentUpon>FormFixBug.cs</DependentUpon>
     </Compile>
     <Compile Include="view\FormLogin.cs">
       <SubType>Form</SubType>
@@ -102,6 +115,12 @@
     </Compile>
     <Compile Include="view\FormRegistration.Designer.cs">
       <DependentUpon>FormRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FormViewFixedBug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FormViewFixedBug.Designer.cs">
+      <DependentUpon>FormViewFixedBug.cs</DependentUpon>
     </Compile>
     <Compile Include="view\StartUp.cs">
       <SubType>Form</SubType>
@@ -124,8 +143,14 @@
     <EmbeddedResource Include="view\FormAddBug.resx">
       <DependentUpon>FormAddBug.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\FormBugAuditHistory.resx">
+      <DependentUpon>FormBugAuditHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\FormBugList.resx">
       <DependentUpon>FormBugList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FormFixBug.resx">
+      <DependentUpon>FormFixBug.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -135,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\FormRegistration.resx">
       <DependentUpon>FormRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FormViewFixedBug.resx">
+      <DependentUpon>FormViewFixedBug.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\StartUp.resx">
       <DependentUpon>StartUp.cs</DependentUpon>

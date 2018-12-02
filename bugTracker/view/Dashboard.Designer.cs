@@ -33,11 +33,11 @@
             this.lblUserType = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelBottom = new System.Windows.Forms.Panel();
+            this.btnGit = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnFixedBug = new System.Windows.Forms.Button();
             this.btnAddBug = new System.Windows.Forms.Button();
             this.btnAddProject = new System.Windows.Forms.Button();
-            this.btnGit = new System.Windows.Forms.Button();
             this.panelTop.SuspendLayout();
             this.panelBottom.SuspendLayout();
             this.SuspendLayout();
@@ -91,7 +91,7 @@
             this.panelBottom.BackColor = System.Drawing.Color.LightSteelBlue;
             this.panelBottom.Controls.Add(this.btnGit);
             this.panelBottom.Controls.Add(this.button3);
-            this.panelBottom.Controls.Add(this.button2);
+            this.panelBottom.Controls.Add(this.btnFixedBug);
             this.panelBottom.Controls.Add(this.btnAddBug);
             this.panelBottom.Controls.Add(this.btnAddProject);
             this.panelBottom.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -99,6 +99,16 @@
             this.panelBottom.Name = "panelBottom";
             this.panelBottom.Size = new System.Drawing.Size(800, 347);
             this.panelBottom.TabIndex = 1;
+            // 
+            // btnGit
+            // 
+            this.btnGit.Location = new System.Drawing.Point(405, 6);
+            this.btnGit.Name = "btnGit";
+            this.btnGit.Size = new System.Drawing.Size(75, 23);
+            this.btnGit.TabIndex = 4;
+            this.btnGit.Text = "git";
+            this.btnGit.UseVisualStyleBackColor = true;
+            this.btnGit.Click += new System.EventHandler(this.btnGit_Click);
             // 
             // button3
             // 
@@ -110,14 +120,15 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // btnFixedBug
             // 
-            this.button2.Location = new System.Drawing.Point(209, 6);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "fix bug";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnFixedBug.Location = new System.Drawing.Point(209, 6);
+            this.btnFixedBug.Name = "btnFixedBug";
+            this.btnFixedBug.Size = new System.Drawing.Size(75, 23);
+            this.btnFixedBug.TabIndex = 2;
+            this.btnFixedBug.Text = "fixed bug audit history";
+            this.btnFixedBug.UseVisualStyleBackColor = true;
+            this.btnFixedBug.Click += new System.EventHandler(this.btnFixedBug_Click);
             // 
             // btnAddBug
             // 
@@ -138,16 +149,6 @@
             this.btnAddProject.Text = "Add Project";
             this.btnAddProject.UseVisualStyleBackColor = true;
             this.btnAddProject.Click += new System.EventHandler(this.btnAddProject_Click);
-            // 
-            // btnGit
-            // 
-            this.btnGit.Location = new System.Drawing.Point(405, 6);
-            this.btnGit.Name = "btnGit";
-            this.btnGit.Size = new System.Drawing.Size(75, 23);
-            this.btnGit.TabIndex = 4;
-            this.btnGit.Text = "git";
-            this.btnGit.UseVisualStyleBackColor = true;
-            this.btnGit.Click += new System.EventHandler(this.btnGit_Click);
             // 
             // Dashboard
             // 
@@ -175,7 +176,7 @@
         private System.Windows.Forms.Label lblUserType;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnFixedBug;
         private System.Windows.Forms.Button btnAddBug;
         private System.Windows.Forms.Button btnGit;
     }

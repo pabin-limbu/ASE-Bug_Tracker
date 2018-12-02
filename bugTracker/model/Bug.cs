@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace bugTracker.model
 {
-    class Bug
+ public   class Bug
     {
         private int id;
         private string bugName;

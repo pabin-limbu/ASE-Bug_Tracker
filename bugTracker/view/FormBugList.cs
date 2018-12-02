@@ -10,12 +10,16 @@ using System.Windows.Forms;
 using bugTracker.controller;
 using bugTracker.model;
 
+
 namespace bugTracker.view
 {
     public partial class FormBugList : Form
     {
-        public FormBugList()
+        User user;
+        public FormBugList(User user)
+            
         {
+            this.user = user;
             InitializeComponent();
         }
 
@@ -62,12 +66,18 @@ namespace bugTracker.view
         myDataGrid.Rows.GetRowCount(DataGridViewElementStates.Selected);
             if (selectedRowCount > 0)
             {
-                DataGridViewRow rowIndex =myDataGrid.Rows[myDataGrid.CurrentCell.RowIndex];
+                DataGridViewRow rowIndex = myDataGrid.Rows[myDataGrid.CurrentCell.RowIndex];
+                FormFixBug fixBug = new FormFixBug(Convert.ToInt32(rowIndex.Cells["bug_id"].Value),user);
+                fixBug.Show();
 
-                label1.Text = ""+myDataGrid.CurrentCell.RowIndex +Convert.ToString(rowIndex.Cells["bug_id"].Value) ;
+
+
+                
+
+               // label1.Text = "" + myDataGrid.CurrentCell.RowIndex + Convert.ToString(rowIndex.Cells["bug_id"].Value);
             }
             else
-                label1.Text = "not selected";
+                MessageBox.Show("Select a row to fix bug");
             }
         }
 }

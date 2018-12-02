@@ -74,8 +74,14 @@ namespace bugTracker.view
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FormBugList bugList = new FormBugList();
+            FormBugList bugList = new FormBugList(user);
             bugList.Show();
+        }
+
+        private void btnFixedBug_Click(object sender, EventArgs e)
+        {
+            FormBugAuditHistory auditForm = new FormBugAuditHistory();
+            auditForm.Show();
         }
     }
 }

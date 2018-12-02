@@ -21,7 +21,16 @@ namespace bugTracker.view
         private void btnSave_Click(object sender, EventArgs e)
         {
             UserController uController = new UserController();
-            uController.adduser("pabin","limbu","limbupabin","lim","abc","admin","male");
+            uController.adduser(txtFname.Text,txtLname.Text,txtUsername.Text,txtPassword.Text,txtEmail.Text,cboUser.Text,getradioValue());
+        }
+
+        public string getradioValue() {
+            if (rdoFemale.Checked)
+                return rdoFemale.Text;
+            else if (rdoMale.Checked)
+                return rdoMale.Text;
+            else
+                return null;
         }
 
         protected override void OnClosed(EventArgs e)
@@ -29,6 +38,11 @@ namespace bugTracker.view
             base.OnClosed(e);
             StartUp.startUpInstance.Show();
             
+        }
+
+        private void FormRegistration_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

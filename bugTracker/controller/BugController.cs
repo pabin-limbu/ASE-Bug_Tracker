@@ -14,12 +14,9 @@ namespace bugTracker.controller
     class BugController
     {
         Bug bug;
+        FixedBug fixedBug;
         public BugController()
         {
-
-
-
-
 
         }
 
@@ -57,15 +54,7 @@ namespace bugTracker.controller
         }
 
 
-        // this code block is used to get image from byte[]
-
-        public Image byteArrayToImage(byte[] byteArrayIn)
-        {
-            MemoryStream ms = new MemoryStream(byteArrayIn);
-            Image returnImage = Image.FromStream(ms);
-            return returnImage;
-        }
-
+        
 
         public List<Bug> getAllBug()
         {
@@ -75,6 +64,66 @@ namespace bugTracker.controller
                 BugDao daobug = new BugDao();
                 allBug = daobug.getAllBug();
                 return allBug;
+            }
+            catch (Exception ex) { }
+
+            return null;
+        }
+
+        public Bug getBugById(int id)
+        {
+            BugDao daobug = new BugDao();
+            try
+            {
+                bug = daobug.getBugById(id);
+                return bug;
+            }
+            catch (Exception e) { }
+
+
+
+            return null;
+        }
+
+
+        public FixedBug getFixedBugById(int id) {
+            BugDao daobug = new BugDao();
+            try
+            {
+                fixedBug = daobug.getFixedBugByID(id);
+                return fixedBug;
+            }
+            catch (Exception e) { }
+
+
+            return null;
+        }
+
+        public bool InsertFixedBug(int bugID,String fixedCode,String fixedBy,DateTime fixedDate) {
+            BugDao daoBug = new BugDao();
+            fixedBug = new FixedBug();
+            fixedBug.Bug_id = bugID;
+            fixedBug.FixedCode = fixedCode;
+            fixedBug.BugFixedBy = fixedBy;
+            fixedBug.FixedDate = fixedDate;
+
+            bool status = daoBug.insertFixedBug(fixedBug);
+            if (status == true)
+                return true;
+            else
+                return false;
+
+            
+        }
+
+        public List<FixedBug> getAllFixedBug()
+        {
+            List<FixedBug> allFixedBug;
+            try
+            {
+                BugDao daobug = new BugDao();
+                allFixedBug = daobug.getAllFixedBug();
+                return allFixedBug;
             }
             catch (Exception ex) { }
 
